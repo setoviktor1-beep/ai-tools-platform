@@ -21,7 +21,7 @@ export const products: Product[] = [
         title: "LinkedIn Ghostwriter (No-Cringe Edition)",
         category: "Prompt",
         priceEUR: 29,
-        stripePriceId: "price_REPLACE_ME_1",
+        stripePriceId: "price_1SluM5LeWKadfqKYd5S0Z1gv",
         shortDescription: "A rigorous system for writing high-engagement LinkedIn posts without the fluff.",
         longDescription:
             "Stop sounding like a generic AI bot. This prompt engineering system uses a strict 'negative constraint' engine to eliminate buzzwords, corporate jargon, and 'bro-etry'. It focuses on value-first communication, specifically designed for founders and technical leaders who want to build authority, not just impressions.",
