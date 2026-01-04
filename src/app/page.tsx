@@ -1,128 +1,193 @@
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900">
-      {/* Hero Section */}
-      <div id="home" className="flex flex-col items-center justify-center min-h-screen px-4">
-        <div className="text-center space-y-8 max-w-4xl">
-          <div className="space-y-2">
-            <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-              V.S.
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-400">
-              Viktor Seto
-            </p>
+    <div className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-white">
+      {/* Navigation */}
+      <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-100 z-50">
+        <div className="max-w-7xl mx-auto px-6 py-4">
+          <div className="flex justify-between items-center">
+            <div className="flex items-center gap-3">
+              <div className="text-2xl font-bold bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
+                V.S.
+              </div>
+              <span className="text-gray-600">Viktor Seto</span>
+            </div>
+            <div className="flex gap-6">
+              <a href="#prompts" className="text-gray-600 hover:text-violet-600 transition-colors font-medium">Prompts</a>
+              <a href="#tools" className="text-gray-600 hover:text-violet-600 transition-colors font-medium">Tools</a>
+              <a href="#contact" className="px-6 py-2 bg-violet-600 text-white rounded-full hover:bg-violet-700 transition-all font-medium">
+                Get Started
+              </a>
+            </div>
           </div>
+        </div>
+      </nav>
 
-          <h2 className="text-3xl md:text-5xl font-bold text-white">
-            AI Tools & Premium Prompts
-          </h2>
+      {/* Hero Section */}
+      <section className="pt-32 pb-20 px-6">
+        <div className="max-w-6xl mx-auto text-center">
+          <div className="inline-block mb-4 px-4 py-2 bg-violet-100 rounded-full">
+            <span className="text-violet-700 font-semibold text-sm">🚀 AI Tools & Premium Prompts</span>
+          </div>
           
-          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-            Building the future of AI-powered productivity. Professional prompt engineering, SaaS solutions, and logistics optimization.
+          <h1 className="text-6xl md:text-7xl font-bold mb-6 leading-tight">
+            <span className="bg-gradient-to-r from-gray-900 via-violet-800 to-indigo-900 bg-clip-text text-transparent">
+              Build Faster with
+            </span>
+            <br />
+            <span className="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
+              AI-Powered Tools
+            </span>
+          </h1>
+
+          <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
+            Professional prompt engineering and AI automation tools for developers, marketers, and entrepreneurs. 
+            <strong className="text-gray-900"> Build your AI-powered future today.</strong>
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-            <a href="#prompts" className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all transform hover:scale-105">
-              Explore Prompts
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+            <a href="#prompts" className="px-8 py-4 bg-gradient-to-r from-violet-600 to-indigo-600 text-white rounded-full font-semibold hover:shadow-lg hover:shadow-violet-500/50 transition-all transform hover:scale-105">
+              Explore Premium Prompts
             </a>
-            <a href="#portfolio" className="px-8 py-4 border-2 border-gray-600 text-white font-semibold rounded-lg hover:border-gray-400 transition-all transform hover:scale-105">
-              View Portfolio
+            <a href="#tools" className="px-8 py-4 border-2 border-gray-300 text-gray-700 rounded-full font-semibold hover:border-violet-600 hover:text-violet-600 transition-all">
+              View AI Tools
             </a>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-16">
-            <div className="p-6 bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700 hover:border-purple-500 transition-all">
-              <div className="text-4xl mb-4">🎯</div>
-              <h3 className="text-xl font-bold text-white mb-2">Premium Prompts</h3>
-              <p className="text-gray-400">Hand-crafted prompts for maximum AI performance</p>
+          {/* Stats */}
+          <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto pt-8 border-t border-gray-200">
+            <div>
+              <div className="text-3xl font-bold text-violet-600">100+</div>
+              <div className="text-gray-600 text-sm">Premium Prompts</div>
             </div>
-            <div className="p-6 bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700 hover:border-blue-500 transition-all">
-              <div className="text-4xl mb-4">🚀</div>
-              <h3 className="text-xl font-bold text-white mb-2">AI SaaS Tools</h3>
-              <p className="text-gray-400">TaskRoute AI and custom solutions</p>
+            <div>
+              <div className="text-3xl font-bold text-indigo-600">5+</div>
+              <div className="text-gray-600 text-sm">AI Tools</div>
             </div>
-            <div className="p-6 bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700 hover:border-pink-500 transition-all">
-              <div className="text-4xl mb-4">⚡</div>
-              <h3 className="text-xl font-bold text-white mb-2">Portfolio</h3>
-              <p className="text-gray-400">AI engineering projects and case studies</p>
-            </div>
-          </div>
-
-          <div className="pt-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/20 border border-green-500/50 rounded-full">
-              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-              <span className="text-green-400 font-medium">Building in Public</span>
+            <div>
+              <div className="text-3xl font-bold text-purple-600">24/7</div>
+              <div className="text-gray-600 text-sm">Support</div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* Features */}
+      <section className="py-20 px-6 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose V.S. Platform?</h2>
+            <p className="text-gray-600 text-lg">Everything you need to supercharge your AI workflow</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+              <div className="w-12 h-12 bg-violet-100 rounded-xl flex items-center justify-center mb-4">
+                <span className="text-2xl">⚡</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Lightning Fast</h3>
+              <p className="text-gray-600">Get instant results with optimized prompts and tools built for speed</p>
+            </div>
+
+            <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+              <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center mb-4">
+                <span className="text-2xl">🎯</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Precision Engineered</h3>
+              <p className="text-gray-600">Hand-crafted prompts tested across multiple AI models for maximum accuracy</p>
+            </div>
+
+            <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+              <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
+                <span className="text-2xl">🚀</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Always Evolving</h3>
+              <p className="text-gray-600">Regular updates with new prompts and tools as AI technology advances</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Prompts Section */}
-      <div id="prompts" className="min-h-screen px-4 py-20 bg-gradient-to-br from-black via-gray-900 to-black">
+      <section id="prompts" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-4">Premium Prompt Library</h2>
-          <p className="text-gray-400 text-center mb-16 text-lg">Professional-grade prompts for developers, marketers, and creators</p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="p-6 bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700 hover:border-blue-500 transition-all">
-              <h3 className="text-xl font-bold text-white mb-2">🧠 Code Generation</h3>
-              <p className="text-gray-400 mb-4">Advanced prompts for generating production-ready code across multiple languages</p>
-              <span className="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">Coming Soon</span>
-            </div>
-            <div className="p-6 bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700 hover:border-purple-500 transition-all">
-              <h3 className="text-xl font-bold text-white mb-2">📊 Business Strategy</h3>
-              <p className="text-gray-400 mb-4">Strategic analysis, market research, and business planning frameworks</p>
-              <span className="inline-block px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm">Coming Soon</span>
-            </div>
-            <div className="p-6 bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700 hover:border-pink-500 transition-all">
-              <h3 className="text-xl font-bold text-white mb-2">✍️ Content Creation</h3>
-              <p className="text-gray-400 mb-4">SEO-optimized articles, social media, and creative writing prompts</p>
-              <span className="inline-block px-3 py-1 bg-pink-500/20 text-pink-400 rounded-full text-sm">Coming Soon</span>
-            </div>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Premium Prompt Library</h2>
+            <p className="text-gray-600 text-lg">Professional-grade prompts for every use case</p>
           </div>
-        </div>
-      </div>
 
-      {/* Portfolio Section */}
-      <div id="portfolio" className="min-h-screen px-4 py-20 bg-gradient-to-br from-gray-900 via-black to-gray-900">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-4">Portfolio</h2>
-          <p className="text-gray-400 text-center mb-16 text-lg">AI-powered projects and case studies</p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="group p-8 bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-2xl border border-gray-700 hover:border-blue-500 transition-all">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="group bg-white p-6 rounded-xl border-2 border-gray-200 hover:border-violet-500 transition-all hover:shadow-lg">
               <div className="flex items-center gap-3 mb-4">
-                <div className="text-3xl">🚚</div>
-                <h3 className="text-2xl font-bold text-white">TaskRoute AI</h3>
+                <span className="text-3xl">💻</span>
+                <h3 className="text-xl font-bold text-gray-900">Code Generation</h3>
               </div>
-              <p className="text-gray-400 mb-4">Logistics optimization SaaS with Gemini AI integration. Reduces delivery time by 10% through intelligent route planning.</p>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">Next.js</span>
-                <span className="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm">Gemini AI</span>
-                <span className="px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-sm">SaaS</span>
+              <p className="text-gray-600 mb-4">Production-ready code across Python, JavaScript, TypeScript, and more</p>
+              <div className="flex items-center justify-between">
+                <span className="text-violet-600 font-semibold">50+ Prompts</span>
+                <span className="text-sm px-3 py-1 bg-green-100 text-green-700 rounded-full font-medium">Coming Soon</span>
               </div>
             </div>
 
-            <div className="group p-8 bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-2xl border border-gray-700 hover:border-purple-500 transition-all">
+            <div className="group bg-white p-6 rounded-xl border-2 border-gray-200 hover:border-indigo-500 transition-all hover:shadow-lg">
               <div className="flex items-center gap-3 mb-4">
-                <div className="text-3xl">🧠</div>
-                <h3 className="text-2xl font-bold text-white">Anatomijos LLM</h3>
+                <span className="text-3xl">📊</span>
+                <h3 className="text-xl font-bold text-gray-900">Business Strategy</h3>
               </div>
-              <p className="text-gray-400 mb-4">Custom LLM trained on anatomy terminology using Transformer architecture. 75% loss reduction over 3 training epochs.</p>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">Python</span>
-                <span className="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm">Transformers</span>
-                <span className="px-3 py-1 bg-pink-500/20 text-pink-400 rounded-full text-sm">ML</span>
+              <p className="text-gray-600 mb-4">Market analysis, competitor research, and strategic planning frameworks</p>
+              <div className="flex items-center justify-between">
+                <span className="text-indigo-600 font-semibold">30+ Prompts</span>
+                <span className="text-sm px-3 py-1 bg-green-100 text-green-700 rounded-full font-medium">Coming Soon</span>
+              </div>
+            </div>
+
+            <div className="group bg-white p-6 rounded-xl border-2 border-gray-200 hover:border-purple-500 transition-all hover:shadow-lg">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-3xl">✍️</span>
+                <h3 className="text-xl font-bold text-gray-900">Content Creation</h3>
+              </div>
+              <p className="text-gray-600 mb-4">SEO articles, social media content, and creative copywriting</p>
+              <div className="flex items-center justify-between">
+                <span className="text-purple-600 font-semibold">40+ Prompts</span>
+                <span className="text-sm px-3 py-1 bg-green-100 text-green-700 rounded-full font-medium">Coming Soon</span>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* CTA Section */}
+      <section id="contact" className="py-20 px-6 bg-gradient-to-r from-violet-600 to-indigo-600">
+        <div className="max-w-4xl mx-auto text-center text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Build the Future?</h2>
+          <p className="text-xl mb-8 text-violet-100">Join the V.S. platform and get early access to premium AI tools</p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <input 
+              type="email" 
+              placeholder="Enter your email" 
+              className="px-6 py-4 rounded-full text-gray-900 placeholder-gray-500 w-full sm:w-96 focus:outline-none focus:ring-2 focus:ring-white"
+            />
+            <button className="px-8 py-4 bg-white text-violet-600 rounded-full font-bold hover:bg-gray-100 transition-all">
+              Get Early Access
+            </button>
+          </div>
+          
+          <p className="text-sm text-violet-200 mt-4">🎉 Limited spots available for founding members</p>
+        </div>
+      </section>
 
       {/* Footer */}
-      <footer className="border-t border-gray-800 py-8">
-        <div className="text-center text-gray-500">
-          <p>© 2026 Viktor Seto. Building the future, one prompt at a time.</p>
+      <footer className="py-12 px-6 border-t border-gray-200">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="flex items-center gap-2">
+              <div className="text-xl font-bold bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">V.S.</div>
+              <span className="text-gray-500">Viktor Seto</span>
+            </div>
+            <div className="text-gray-600 text-sm">
+              © 2026 Viktor Seto. Building the future, one prompt at a time.
+            </div>
+          </div>
         </div>
       </footer>
     </div>
